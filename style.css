@@ -1,0 +1,227 @@
+body {
+  font-family: "poppins", sans-serif;
+  background-color: black;
+}
+/* Add this CSS to your stylesheet */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.bg-image {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./Untitled-1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-link {
+  font-size: 18px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #766380;
+  position: absolute;
+  left: 0;
+  bottom: -1.2px;
+  transition: 0.2s;
+}
+
+.nav-link:hover::after {
+  width: 70px;
+}
+
+.Chandru {
+  margin-inline: 140px;
+  font-weight: 900;
+  color: white;
+}
+.Chandru_1 {
+  font-weight: 900;
+  color: #f72d93;
+}
+.bg-image #ma {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  height: 40vh;
+  text-align: end;
+}
+#ma {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.front {
+  color: white;
+  text-align: start;
+  margin-inline: 140px;
+  margin-top: -26px;
+}
+.btn-download {
+  margin-inline: 140px;
+  background-color: #f72d93; /* Set the background color */
+  color: white; /* Set the text color */
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px; /* Adjust padding for the button */
+  border-radius: 5px; /* Add rounded corners */
+  text-decoration: none; /* Remove underlines */
+  display: inline-block;
+  margin-top: 10px; /* Adjust the top margin as needed */
+}
+/* Add hover effect for the button */
+.btn-download:hover {
+  background-color: #d1247b;
+}
+
+/* //about */
+
+#about {
+  margin: 70px;
+  padding: 50px;
+}
+
+.img {
+  border-radius: 50px;
+}
+
+.about {
+  padding: 10px;
+}
+
+.experience {
+  cursor: pointer;
+}
+
+.experience::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #766380;
+  position: absolute;
+  left: 0;
+  bottom: -1.2px;
+  transition: 0.2s;
+}
+.experience:hover {
+  width: 100%;
+}
+
+.skills {
+  cursor: pointer;
+}
+
+#skills,
+#experience {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.hr1 {
+  position: relative;
+  bottom: 20px;
+  width: 100px;
+  border-bottom: 5px solid #f72d93;
+}
+.hr2 {
+  position: relative;
+  left: 250px;
+  bottom: 20px;
+  width: 100px;
+  border-bottom: 5px solid #f72d93;
+}
+
+#Projects {
+  color: white;
+  margin: 70px;
+  padding: 50px;
+}
+
+.pad {
+  padding-block: 50px;
+  opacity: 0.5;
+}
+
+.pad:hover {
+  transition: 0.9s;
+  opacity: 1;
+}
+
+.color,
+.list-group-item {
+  background-color: black;
+  color: white;
+}
+
+.active {
+  text-decoration: underline 5px #f72d93;
+}
+
+#projects {
+  margin: 70px;
+  padding: 50px;
+}
+
+.card {
+  background-color: #242a34;
+}
+
+.btn-download1 {
+  background-color: #f72d93; /* Set the background color */
+  color: white; /* Set the text color */
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px; /* Adjust padding for the button */
+  border-radius: 5px; /* Add rounded corners */
+  text-decoration: none; /* Remove underlines */
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.car {
+  transform-style: preserve-3d;
+  transition: transform 0.3s;
+}
+
+.car:hover {
+  transform: rotateY(360deg) scale(1.1);
+  transition: transform 0.9s ease;
+}
+
+.pro {
+  padding: 25px;
+}
+
+.bot {
+  padding-bottom: 50px;
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+.text-white {
+  text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+  .bg-image {
+    background-image: url(./final1.png);
+  }
+  .btn-download {
+    margin-inline: 90px;
+  }
+}
